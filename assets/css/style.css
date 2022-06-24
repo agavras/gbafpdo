@@ -1,0 +1,271 @@
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header /////////////////////////////////////////////////////////////////////*/
+header {
+    background-color: rgb(240, 240, 240);
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#cadreLogoGBAF {
+    display: flex;
+    align-items: center;
+}
+
+#cadreIdUtilisateur {
+    display: flex;
+    align-items: center;
+}
+
+#cadreIdUtilisateur img {
+    padding-right: 10px;
+}
+
+/* connexion //////////////////////////////////////////////////////////////////*/
+#sectionConnexion {
+    background-color: rgb(255, 255, 255);
+    padding: 32px;
+    width: auto;
+    height: 50vh;
+}
+
+#sectionConnexion form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#sectionConnexion input {
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+/* connexion ALTERNATIVE ///////////////////////////////////////////////////////*/
+#sectionConnexionAlternative {
+    background-color: rgb(216, 134, 134);
+    padding: 32px;
+    width: auto;
+    height: 50vh;
+}
+
+#sectionConnexionAlternative form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#sectionConnexionAlternative input {
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+/* inscription ////////////////////////////////////////////////////////////////*/
+#sectionInscription {
+    background-color: rgb(210, 210, 210);
+    padding: 32px;
+    width: auto;
+    height: 50vh;
+}
+
+#sectionInscription form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#sectionInscription input {
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+/* parametres du compte ///////////////////////////////////////////////////////*/
+#sectionParametresDuCompte {
+    background-color: hsl(210, 34%, 64%);
+    padding: 32px;
+    width: auto;
+    height: 50vh;
+}
+
+#sectionParametresDuCompte form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#sectionParametresDuCompte input {
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+/* presentation GBAF //////////////////////////////////////////////////////////*/
+#sectionPresentation {
+    background-color: rgb(255, 240, 240);
+    padding: 32px;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+/* acteurs ////////////////////////////////////////////////////////////////////*/
+#sectionActeurs {
+    background-color: rgb(255, 255, 255);
+    padding: 32px;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.conteneurActeurs {
+    background-color: rgb(100, 180, 180);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenuActeur {
+    background-color: rgb(100, 200, 200);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.contenuActeur div {
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 10px;
+}
+
+.contenuActeur img {
+    width: 235px;
+    height: 64px;
+    margin: 5px;
+}
+
+.contenuActeur button {
+    border-radius: 8px;
+    width: 120px;
+    min-width: 94px;
+    height: 32px;
+    margin: 10px;
+}
+
+.contenuActeur a {
+    align-self: flex-end;
+}
+
+/* footer /////////////////////////////////////////////////////////////////////*/
+footer {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+/* page acteur ////////////////////////////////////////////////////////////////*/
+#presentationActeur {
+    background-color: aquamarine;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    width: auto;
+}
+
+#presentationActeur img {
+    align-self: center;
+}
+
+#presentationActeur h2 {
+    max-width: 480px;
+    align-self: center;
+}
+
+#commentairesActeur {
+    background-color: bisque;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+#div1Commentaires {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#div1Commentaires button {
+    border-radius: 8px;
+}
+
+#btnNouveauCommentaire {
+    height: 32px;
+    width: 120px;
+    margin: 10px;
+}
+
+#btnLike {
+    height: 32px;
+    width: 32px;
+}
+
+#btnDislike {
+    height: 32px;
+    width: 32px;
+}
+
+#commentairesPHP {
+    width: 450px;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+/* BREAKPOINT MOBILE & TABLETTE ///////////////////////////////////////////////*/
+@media screen and (max-width: 768px) {
+    header {
+        background-color: rgb(243, 170, 170);
+        width: auto;
+        height: 140px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenuActeur {
+        background-color: rgb(100, 200, 160);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: column;
+        margin: 10px;
+    }
+
+    .contenuActeur div {
+        background-color: antiquewhite;
+        width: 300px;
+        margin: 10px;
+    }
+}
+
+/* EOF /////////////////////////////////////////////////*/
